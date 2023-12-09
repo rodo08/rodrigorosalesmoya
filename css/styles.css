@@ -10,13 +10,15 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   columns: #555;
-  height: 100vh;
   /*only works if theres nothing absolutely positioned in relation to body*/
   overflow-x: hidden;
+  height: 100vh;
 }
 
 ul {
@@ -130,6 +132,7 @@ button {
   }
 }
 .main {
+  display: flex;
   max-width: 62rem;
   padding: 1rem;
   margin: 0 auto;
@@ -173,6 +176,25 @@ button {
   .hero-section {
     grid-template-columns: 1fr;
   }
+}
+.footer {
+  margin: 0 auto;
+  margin-top: auto;
+  width: 100%;
+  background-color: rgb(255, 187, 0);
+  border-top: 2px solid rgb(255, 153, 0);
+}
+
+.footer-container {
+  max-width: 62rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
