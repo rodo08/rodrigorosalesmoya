@@ -1,0 +1,96 @@
+@import "colors.scss";
+
+.header {
+  background-color: $header;
+  border-bottom: 2px solid $border;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 62rem;
+  padding: 1rem;
+  gap: 1.5rem;
+  margin: 0 auto;
+
+  img {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+    li {
+      font-weight: bold;
+      color: $text;
+    }
+  }
+}
+
+.nav-menu-link {
+  text-decoration: none;
+}
+
+.btns-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .header {
+    position: relative;
+  }
+
+  .btns-mobile {
+    display: block;
+  }
+
+  .header-container {
+    margin: 0 auto;
+    img[name="close-menu"] {
+      display: none;
+    }
+  }
+
+  .main-nav {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-open .icon-mobile-nav[name="burger-menu"] {
+    display: none;
+  }
+  .nav-open .icon-mobile-nav[name="close-menu"] {
+    display: block;
+  }
+
+  .btn-mobile-nav {
+    background-color: $header;
+    cursor: pointer;
+  }
+
+  .main-nav-list {
+    width: 100%;
+    position: absolute;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 0%;
+    backdrop-filter: blur(10px);
+    background-color: $mobile-background;
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid $header;
+    align-items: center;
+    margin-top: 2rem;
+    a {
+      color: $text;
+    }
+  }
+}
