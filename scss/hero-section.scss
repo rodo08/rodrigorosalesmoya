@@ -2,8 +2,7 @@
 
 .headline {
   h1 {
-    padding-top: 2rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: $header;
   }
 }
@@ -39,5 +38,15 @@
 @media (max-width: 600px) {
   .hero-section {
     grid-template-columns: 1fr;
+  }
+
+  .headline {
+    h1 {
+      padding-top: 2rem;
+    }
+  }
+
+  .main-illustration {
+    padding: 2rem 0 0 0;
   }
 }
