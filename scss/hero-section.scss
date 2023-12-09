@@ -1,0 +1,43 @@
+@import "colors.scss";
+
+.headline {
+  h1 {
+    padding-top: 2rem;
+    font-size: 4rem;
+    color: $header;
+  }
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-illustration img {
+  width: 100%;
+}
+
+.introduction-text {
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.hero-button {
+  padding: 1rem;
+  background-color: $header;
+  border-radius: 5px;
+  color: $button-text;
+  font-weight: bold;
+}
+
+.hero-button:hover {
+  background-color: $button-background;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+}
