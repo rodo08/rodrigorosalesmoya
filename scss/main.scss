@@ -1,17 +1,7 @@
 @import "colors";
 
 .main {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   max-width: 62rem;
   padding: 1rem;
   margin: 0 auto;
-}
-
-.headline {
-  h1 {
-    padding-top: 2rem;
-    font-size: 4rem;
-    color: $header;
-  }
 }
