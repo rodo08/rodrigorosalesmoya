@@ -6,7 +6,7 @@
     "node-sass": "^9.0.0"
   },
   "scripts": {
-    "compile-sass": "node-sass src/styles.scss dist/styles.css",
+    "compile-sass": "node-sass scss/styles.scss css/styles.css",
     "sass-watch": "sass scss/styles.scss css/styles.css --watch"
   }
 }
