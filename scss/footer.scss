@@ -1,0 +1,22 @@
+@import "colors.scss";
+
+.footer {
+  margin: 0 auto;
+  margin-top: auto;
+  width: 100%;
+
+  background-color: $header;
+  border-top: 2px solid $border;
+}
+
+.footer-container {
+  max-width: 62rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
