@@ -268,6 +268,11 @@ button {
   line-height: 1.3rem;
 }
 
+.software {
+  display: flex;
+  gap: 1rem;
+}
+
 .work-samples {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -343,6 +348,93 @@ button {
   background-color: rgba(217, 209, 197, 0.5);
   height: 304px;
   width: 304px;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 62rem;
+  padding: 1rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.description h2 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.description h4 {
+  font-size: 1.2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 2rem;
+  color: rgb(255, 187, 0);
+}
+
+.description p {
+  line-height: 1.3rem;
+  padding-bottom: 2rem;
+}
+
+.description img {
+  border: 2px solid rgb(255, 187, 0);
+  width: 250px;
+}
+
+.cv-download {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 35%;
+  background-color: rgb(255, 187, 0);
+  border-radius: 5px;
+  color: rgb(48, 36, 2);
+  font-weight: bold;
+}
+
+.cv-download:hover {
+  background-color: rgba(255, 202, 87, 0.5);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.employment {
+  display: flex;
+  flex-direction: column;
+}
+
+.employment-container {
+  padding: 1rem 2rem 1rem 1rem;
+  border: 2px solid rgba(255, 202, 87, 0.5);
+  border-radius: 10px 0 0 10px;
+  height: 388px;
+  overflow-y: scroll;
+}
+
+.employment h2 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.work-position {
+  padding-bottom: 2rem;
+}
+
+.work-position h3 {
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  color: rgb(255, 187, 0);
+}
+
+.work-position h4 {
+  font-weight: 500;
+  color: rgb(165, 165, 165);
+  padding-bottom: 1.5rem;
+}
+
+.client-texts {
+  line-height: 1.3rem;
 }
 
 .footer {
