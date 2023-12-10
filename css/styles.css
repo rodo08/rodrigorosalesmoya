@@ -265,6 +265,7 @@ button {
 }
 .brand-stack p {
   color: rgb(0, 0, 0);
+  line-height: 1.3rem;
 }
 
 .work-samples {
