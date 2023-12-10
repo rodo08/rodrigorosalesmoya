@@ -1,0 +1,63 @@
+@import "colors.scss";
+
+.brand-intro-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.brand-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.brand-stack {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 1rem;
+  p {
+    color: $text;
+    line-height: 1.3rem;
+  }
+}
+
+.work-samples {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 2fr);
+  gap: 1rem;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.sample {
+  border: 1px solid $border;
+}
+
+.sample img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 0.5rem;
+}
+
+.doble-span {
+  grid-column: span 2;
+}
+
+.back {
+  padding: 1rem;
+  width: 30%;
+  background-color: $header;
+  border-radius: 5px;
+  color: $button-text;
+  font-weight: bold;
+}
+
+.back:hover {
+  background-color: $button-background;
+  transition: background-color 0.3s ease-in-out;
+}
