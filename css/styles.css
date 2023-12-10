@@ -289,6 +289,10 @@ button {
   padding: 0.5rem;
 }
 
+.doble-span {
+  grid-column: span 2;
+}
+
 .back {
   padding: 1rem;
   width: 30%;
