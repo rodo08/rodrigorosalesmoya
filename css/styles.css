@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -448,6 +449,11 @@ button {
 
 .work-position {
   padding-bottom: 2rem;
+}
+
+.diagonal-arrow {
+  transform: rotate(-45deg); /* rota el carácter en diagonal */
+  display: inline-block;
 }
 
 .work-position h3 {
