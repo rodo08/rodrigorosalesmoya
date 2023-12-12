@@ -53,6 +53,7 @@
 
 .brand-container:hover {
   filter: grayscale(0);
+  transition: filter 0.5s ease-in-out;
 }
 
 .arrow-icon {
@@ -60,4 +61,22 @@
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
   z-index: 999;
+}
+
+.upper-headline-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headline-button {
+  padding: 1rem;
+  border-radius: 5px;
+  color: $border;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.headline-button:hover {
+  transition: color 0.3s ease-in-out;
+  color: $text;
 }
