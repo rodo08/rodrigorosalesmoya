@@ -69,6 +69,11 @@
   padding-bottom: 2rem;
 }
 
+.diagonal-arrow {
+  transform: rotate(-45deg); /* rota el carácter en diagonal */
+  display: inline-block;
+}
+
 .work-position h3 {
   padding-top: 1rem;
   font-size: 1.2rem;
