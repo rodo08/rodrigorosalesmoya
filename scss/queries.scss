@@ -4,6 +4,15 @@
     width: 100%;
   }
 
+  .upper-headline-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .headline-button {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+
   .brand-intro-container {
     display: flex;
     flex-direction: column;
@@ -67,7 +76,25 @@
     align-items: center;
   }
 
+  .description p {
+    padding-bottom: 0;
+  }
+
+  .employment h2 {
+    padding-bottom: 1rem;
+  }
+
   .cv-download {
     width: 50%;
+  }
+
+  .employment-container {
+    overflow-y: visible;
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .employment-container article:last-child {
+    padding-bottom: 0;
   }
 }
