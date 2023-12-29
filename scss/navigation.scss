@@ -33,6 +33,11 @@
   text-decoration: none;
 }
 
+.nav-menu-link:hover {
+  transition: all 0.3s ease-in-out;
+  filter: invert(100);
+}
+
 .btns-mobile {
   display: none;
 }
@@ -77,14 +82,20 @@
     cursor: pointer;
   }
 
+  .nav-menu-link:hover {
+    filter: invert(0);
+    color: $border;
+  }
+
   .main-nav-list {
+    z-index: 999;
     width: 100%;
     position: absolute;
     padding: 2rem;
     flex-direction: column;
     justify-content: flex-end;
     left: 0%;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background-color: $mobile-background;
     backdrop-filter: blur(10px);
     border-bottom: 3px solid $header;
