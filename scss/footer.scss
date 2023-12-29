@@ -26,3 +26,8 @@
   align-items: center;
   gap: 1rem;
 }
+
+.social-media-icons a:hover {
+  transition: all 0.3s ease-in-out;
+  filter: invert(100);
+}
