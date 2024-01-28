@@ -47,6 +47,45 @@ button {
   cursor: pointer;
 }
 
+h3,
+p {
+  text-wrap: pretty;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 187, 0);
+  border: 0px none white;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(255, 153, 0);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(217, 209, 197, 0.5);
+  border: 0px none white;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:active {
+  background: rgb(211, 211, 211);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
 .header {
   background-color: rgb(255, 187, 0);
   border-bottom: 2px solid rgb(255, 153, 0);
@@ -470,7 +509,7 @@ span:nth-child(3) {
 }
 
 .employment-container {
-  padding: 1rem 2rem 1rem 1rem;
+  padding: 1rem;
   border: 2px solid rgba(255, 202, 87, 0.5);
   border-radius: 10px;
   height: 388px;
