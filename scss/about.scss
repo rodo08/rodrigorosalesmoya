@@ -50,6 +50,34 @@
 .employment {
   display: flex;
   flex-direction: column;
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $header;
+    border: 0px none $white;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: $border;
+  }
+  ::-webkit-scrollbar-track {
+    background: $mobile-background;
+    border: 0px none $white;
+    border-radius: 50px;
+  }
+
+  ::-webkit-scrollbar-track:active {
+    background: $light-gray;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
 }
 
 .employment-container {

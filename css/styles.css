@@ -52,40 +52,6 @@ p {
   text-wrap: pretty;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(255, 187, 0);
-  border: 0px none white;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: rgb(255, 153, 0);
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(217, 209, 197, 0.5);
-  border: 0px none white;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-track:active {
-  background: rgb(211, 211, 211);
-}
-
-::-webkit-scrollbar-corner {
-  background: transparent;
-}
-
 .header {
   background-color: rgb(255, 187, 0);
   border-bottom: 2px solid rgb(255, 153, 0);
@@ -507,6 +473,33 @@ span:nth-child(3) {
   display: flex;
   flex-direction: column;
 }
+.employment ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.employment ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+.employment ::-webkit-scrollbar-thumb {
+  background: rgb(255, 187, 0);
+  border: 0px none white;
+  border-radius: 50px;
+}
+.employment ::-webkit-scrollbar-thumb:active {
+  background: rgb(255, 153, 0);
+}
+.employment ::-webkit-scrollbar-track {
+  background: rgba(217, 209, 197, 0.5);
+  border: 0px none white;
+  border-radius: 50px;
+}
+.employment ::-webkit-scrollbar-track:active {
+  background: rgb(211, 211, 211);
+}
+.employment ::-webkit-scrollbar-corner {
+  background: transparent;
+}
 
 .employment-container {
   padding: 1rem;
@@ -579,11 +572,49 @@ span:nth-child(3) {
   filter: invert(100);
 }
 
-@media (max-width: 600px) {
-  .featured-brands {
-    grid-template-columns: 1fr;
-    width: 100%;
+@media (max-width: 1120px) {
+  @keyframes magnify {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
+  .ilustration:hover {
+    cursor: pointer;
+    transform: scale(1);
+    transform-origin: center center;
+    animation: magnify 0.5s ease-in;
+  }
+  .ilustration:hover img {
+    width: 100%;
+    background-color: rgb(255, 153, 0);
+    border: 1px solid rgb(255, 153, 0);
+  }
+}
+@media (max-width: 860px) {
+  .featured-brands {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .resume {
+    grid-template-columns: 1fr;
+  }
+  .cv-download {
+    width: 20%;
+  }
+  .illustration-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 660px) {
+  .featured-brands {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
   .upper-headline-container {
     flex-direction: column;
     align-items: flex-start;
@@ -614,26 +645,6 @@ span:nth-child(3) {
     object-fit: contain;
     filter: grayscale(100%);
     transition: filter 1s ease-in;
-  }
-  @keyframes magnify {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .ilustration:hover {
-    cursor: pointer;
-    transform: scale(1);
-    transform-origin: center center;
-    animation: magnify 0.5s ease-in;
-  }
-  .ilustration:hover img {
-    width: 100%;
-    background-color: rgb(255, 153, 0);
-    border: 1px solid rgb(255, 153, 0);
-    filter: grayscale(0%);
   }
   .resume {
     grid-template-columns: 1fr;
