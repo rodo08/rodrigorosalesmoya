@@ -49,6 +49,10 @@
 }
 
 @media (max-width: 600px) {
+  .headline img {
+    width: 400px;
+  }
+
   .upper-headline-container {
     flex-direction: column;
     align-items: flex-start;
@@ -61,6 +65,13 @@
   .brand {
     width: 150px;
     height: 150px;
+  }
+
+  .brands {
+    padding: 4rem;
+    h5 {
+      padding: 1.5rem 0 0 0;
+    }
   }
 
   .brand-intro-container {
@@ -123,5 +134,18 @@
 
   .employment-container article:last-child {
     padding-bottom: 0;
+  }
+
+  .cv-button-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills {
+    padding-bottom: 2rem;
+  }
+
+  .skill-container h2 {
+    padding-top: 2rem;
   }
 }

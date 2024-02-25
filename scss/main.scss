@@ -2,8 +2,8 @@
 
 .main {
   display: flex;
+  flex-direction: column;
   max-width: 62rem;
   padding: 0 1rem 1rem 1rem;
   margin: 0 auto;
-  margin-top: auto;
 }
