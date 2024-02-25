@@ -61,14 +61,6 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-// .employment {
-//   display: flex;
-//   flex-direction: column;
-//   ul li img {
-//     height: 50px;
-//   }
-// }
-
 .skills {
   display: flex;
   flex-direction: column;
@@ -150,73 +142,3 @@
     opacity: 75%;
   }
 }
-
-//   ::-webkit-scrollbar {
-//     width: 10px;
-//     height: 10px;
-//   }
-//   ::-webkit-scrollbar-button {
-//     width: 0px;
-//     height: 0px;
-//   }
-//   ::-webkit-scrollbar-thumb {
-//     background: $header;
-//     border: 0px none $white;
-//     border-radius: 50px;
-//   }
-//   ::-webkit-scrollbar-thumb:active {
-//     background: $border;
-//   }
-//   ::-webkit-scrollbar-track {
-//     background: $mobile-background;
-//     border: 0px none $white;
-//     border-radius: 50px;
-//   }
-
-//   ::-webkit-scrollbar-track:active {
-//     background: $light-gray;
-//   }
-//   ::-webkit-scrollbar-corner {
-//     background: transparent;
-//   }
-// }
-
-// .employment-container {
-//   padding: 1rem;
-//   border: 2px solid $button-background;
-//   border-radius: 10px;
-//   height: 388px;
-//   overflow-y: scroll;
-// }
-
-// .employment h2 {
-//   font-size: 2rem;
-//   padding-bottom: 2rem;
-// }
-
-// .work-position {
-//   padding-bottom: 2rem;
-// }
-
-// .diagonal-arrow {
-//   transform: rotate(-45deg); /* rota el carácter en diagonal */
-//   display: inline-block;
-// }
-
-// .work-position h3 {
-//   padding-top: 1rem;
-//   font-size: 1.2rem;
-//   padding-top: 1rem;
-//   padding-bottom: 0.5rem;
-//   color: $header;
-// }
-
-// .work-position h4 {
-//   font-weight: 500;
-//   color: $dates;
-//   padding-bottom: 1.5rem;
-// }
-
-// .client-texts {
-//   line-height: 1.3rem;
-// }
