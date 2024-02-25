@@ -168,6 +168,7 @@ p {
 .headline img {
   margin: 0 auto;
   padding: 3rem 0 1.5rem 0;
+  width: 80%;
   height: auto;
   animation: introAnimation 1.5s ease-out forwards;
 }
