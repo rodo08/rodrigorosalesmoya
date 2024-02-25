@@ -46,11 +46,16 @@
     width: 100%;
     justify-content: center;
   }
+
+  .stack-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 @media (max-width: 600px) {
   .headline img {
-    width: 400px;
+    padding: 2rem 0 1.5rem 0;
+    width: 100%;
   }
 
   .upper-headline-container {
@@ -118,22 +123,8 @@
     padding-bottom: 0;
   }
 
-  .employment h2 {
-    padding-bottom: 1rem;
-  }
-
   .cv-download {
     width: 50%;
-  }
-
-  .employment-container {
-    overflow-y: visible;
-    height: 100%;
-    padding: 1rem;
-  }
-
-  .employment-container article:last-child {
-    padding-bottom: 0;
   }
 
   .cv-button-container {

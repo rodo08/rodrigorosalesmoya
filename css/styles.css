@@ -168,7 +168,6 @@ p {
 .headline img {
   margin: 0 auto;
   padding: 3rem 0 1.5rem 0;
-  width: 500px;
   height: auto;
   animation: introAnimation 1.5s ease-out forwards;
 }
@@ -664,10 +663,14 @@ p {
     width: 100%;
     justify-content: center;
   }
+  .stack-logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media (max-width: 600px) {
   .headline img {
-    width: 400px;
+    padding: 2rem 0 1.5rem 0;
+    width: 100%;
   }
   .upper-headline-container {
     flex-direction: column;
@@ -721,19 +724,8 @@ p {
   .description p {
     padding-bottom: 0;
   }
-  .employment h2 {
-    padding-bottom: 1rem;
-  }
   .cv-download {
     width: 50%;
-  }
-  .employment-container {
-    overflow-y: visible;
-    height: 100%;
-    padding: 1rem;
-  }
-  .employment-container article:last-child {
-    padding-bottom: 0;
   }
   .cv-button-container {
     align-items: center;
