@@ -1,33 +1,95 @@
 @import "colors.scss";
 
-.headline {
-  h1 {
-    font-size: 3rem;
-    color: $header;
-  }
-}
-
 .hero-section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.main-illustration img {
   width: 100%;
 }
 
+.headline {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.5rem;
+
+  img {
+    margin: 0 auto;
+    padding: 3rem 0 1.5rem 0;
+    width: 500px;
+    height: auto;
+    animation: introAnimation 1.5s ease-out forwards;
+  }
+}
+
+.introduction {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .introduction-text {
-  padding: 2rem 0;
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 1rem;
   line-height: 1.6rem;
+  padding: 0 0 1.5rem 0;
+  strong {
+    font-size: 1.2rem;
+  }
 }
 
 .hero-button {
+  width: 150px;
   padding: 1rem;
   background-color: $header;
   border-radius: 5px;
   color: $button-text;
   font-weight: bold;
+  border: 2px solid $mobile-background;
+}
+
+.hero-button:hover {
+  background-color: $button-background;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.brands {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 0 0;
+  display: inline-flex;
+  padding: 0.75rem 0;
+  //overflow: hidden;
+  h5 {
+    font-weight: 400;
+    padding: 4rem 0 0 0;
+    color: $dates;
+  }
+}
+
+.brands-ribbon {
+  position: absolute;
+  top: 8rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  animation: scroll 250s linear infinite;
+}
+
+.brands-ribbon li img {
+  width: auto;
+  height: 30px;
+  opacity: 70%;
+  display: inline-flex;
+  filter: grayscale(1);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes introAnimation {
@@ -39,41 +101,5 @@
   100% {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-.intro span {
-  opacity: 0;
-  display: flex;
-  flex-direction: column;
-  animation: introAnimation 1.5s ease-out forwards;
-}
-
-span:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-span:nth-child(3) {
-  animation-delay: 1s;
-}
-
-.hero-button:hover {
-  background-color: $button-background;
-  transition: background-color 0.3s ease-in-out;
-}
-
-@media (max-width: 600px) {
-  .hero-section {
-    grid-template-columns: 1fr;
-  }
-
-  .headline {
-    h1 {
-      padding-top: 2rem;
-    }
-  }
-
-  .main-illustration {
-    padding: 2rem 0 0 0;
   }
 }
