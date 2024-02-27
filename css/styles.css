@@ -521,9 +521,8 @@ p {
   padding: 1rem 0 0 0;
 }
 .skills h4 {
+  padding: 1rem 0 0 0;
   font-size: 1.2rem;
-  padding-top: 0.8rem;
-  padding-bottom: 2rem;
   color: rgb(255, 187, 0);
 }
 
@@ -533,7 +532,7 @@ p {
   justify-items: center;
   align-items: center;
   gap: 1rem;
-  padding: 0 0 2rem 0;
+  padding: 1.5rem 0 3rem 0;
 }
 .stack-logos img {
   filter: sepia(30%) hue-rotate(5deg);
