@@ -155,8 +155,8 @@ p {
   margin: 0 auto;
 }
 
-.hero-section {
-  width: 100%;
+.logo:hover {
+  filter: invert(100%);
 }
 
 .headline {
@@ -737,6 +737,33 @@ p {
   .skill-container h2 {
     padding-top: 2rem;
   }
+}
+.project button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 0 0;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease-in;
+}
+.project button div {
+  display: grid;
+  justify-items: start;
+}
+.project button div p {
+  text-align: start;
+  padding: 0.5rem 0 0 0;
+}
+.project button div li {
+  padding: 0.5rem;
+}
+.project button img {
+  border-radius: 0.5rem;
+}
+
+.project button:hover {
+  border-radius: 0.5rem;
+  background-color: rgba(217, 209, 197, 0.5);
 }
 
 /*# sourceMappingURL=styles.css.map */
