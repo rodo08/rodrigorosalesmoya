@@ -1,0 +1,30 @@
+@import "colors.scss";
+
+.project button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0 0 0;
+  padding: 0.5rem;
+  transition: background-color 0.3s ease-in;
+  div {
+    display: grid;
+    justify-items: start;
+    p {
+      text-align: start;
+      padding: 0.5rem 0 0 0;
+    }
+
+    li {
+      padding: 0.5rem;
+    }
+  }
+  img {
+    border-radius: 0.5rem;
+  }
+}
+
+.project button:hover {
+  border-radius: 0.5rem;
+  background-color: $mobile-background;
+}
