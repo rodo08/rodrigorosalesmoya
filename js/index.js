@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(function () {
     hideLoader();
-  }, 2000);
+  }, 1000);
 });
 
 const hideLoader = () => {
